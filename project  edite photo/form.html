@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+   
+
+</style>
+<body>
+    <div class="top">
+        <p>Photo Edite</p>
+    </div>
+<div class="container">
+    <div class="img">
+       
+        <div class="img-box">
+             <img  id="img"><!--src="img-6.jpg" -->
+             <canvas id="canvas"></canvas>  <!--copy image after filter -->
+            </div>
+            <div class="upload">
+                <label for="upload">Upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+    <div class="filters"> 
+        <ul>
+            <li> <labele  for="saturate">Saturate</labele>
+            <input type="range" id="saturate" min="0" max="200" value="100"> 
+        </li>
+            <li> <labele  for="contrast">Contrast</labele>
+                <input type="range" id="contrast" min="0" max="200" value="100">
+             </li>
+                <li> <labele  for="brightness">Brightness</labele>
+                    <input type="range" id="brightness" min="0" max="200" value="100"> 
+                </li>
+                    <li> <labele  for="sepia">Sepial</labele>
+                        <input type="range" id="sepia" min="0" max="200" value="0"> 
+                    </li>
+                        <li> <labele  for="grayscale">Grayscale</labele>
+                            <input type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+                        
+                        </li>
+                            <li> <labele  for="blur">Blur</labele>
+                                <input type="range" id="blur" step="0.1" min="0" max="10" value="0"> 
+                            </li>
+                             <li> <labele  for="hue-rotate">Hue-rotate</labele>
+                                <input type="range" id="hue-rotate"  min="0" max="350" value="0"> 
+                            </li>
+                            <li> 
+                                <a download="true" id="download">download</a>
+                                <span onclick="reseValue()">Rest</span>
+                            </li></ul>
+    </div>
+</div>
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    <script src="script.js"></script>
+</body>
+</html>
